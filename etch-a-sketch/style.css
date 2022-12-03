@@ -1,0 +1,66 @@
+@font-face {
+    font-family: etchRoboto;
+    src: url(Roboto-Black.ttf);
+}
+
+* {
+    background-color: #D3D3D3;
+    color: black;
+    font-family: etchRoboto, Arial;
+}
+
+.primary {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: 5px solid black;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+h1,
+h4 {
+    text-align: center;
+}
+
+.gridSquare {
+    background-color: white;
+    /*border: 1px solid white;*/
+}
+
+.reset {
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+}
+
+.contents {
+    text-align: center;
+}
+
+#quantity {
+    background-color: white;
+}
+
+label {
+    display: block;
+}
+
+p {
+    margin-bottom: 0;
+}
+#input-color {
+    border: none;
+    width: 150px;
+    height: 40px;
+    margin-top: 0;
+}
