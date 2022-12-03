@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Div that is hidden until end of game, winner/draw announcement-->
+    <div class="game-over">
+        <p class="ending hide">The Winner is:</p>
+        <p class="x-wins hide">X</p>
+        <p class="o-wins hide">O</p>
+        <p class="ending draw hide">The game ended in a draw!</p>
+    </div>
+
+    <!--Div encapsulating the entire game-->
+    <div class="game">
+        <!--Player symbol selection div containing two buttons for X/O-->
+        <div class="player">
+            <button class="btn person x">X</button>
+            <button class="btn person o">O</button>
+        </div>
+
+        <!--Game board div containing 9 button fields-->
+        <div class="board">
+            <button class="field"><p></p></button>
+            <button class="field"><p></p></button>
+            <button class="field no-right"><p></p></button>
+            <button class="field"><p></p></button>
+            <button class="field"><p></p></button>
+            <button class="field no-right"><p></p></button>
+            <button class="field no-bottom"><p></p></button>
+            <button class="field no-bottom"><p></p></button>
+            <button class="field no-right no-bottom"><p></p></button>
+        </div>
+
+        <!--Restart button div-->
+        <div class="restart">
+            <button class="btn restart-btn">Restart</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
